@@ -1,6 +1,8 @@
+import cards_tools
 
 while True: # 无限循环，用用户主动决定什么时候退出
     
+    cards_tools.show_menu()
     # TODO(小明) 显示功能菜单
 
     action_str = input("请选择需要执行的操作：")
@@ -12,13 +14,13 @@ while True: # 无限循环，用用户主动决定什么时候退出
         
         #新增名片
         if action_str == "1":
-            pass
+            cards_tools.new_card()
             # 显示全部
         elif action_str == "2":
-            pass
+            cards_tools.show_all()
             # 查询名片
         elif action_str =="3":
-            pass
+            cards_tools.search_card()
         pass
 
     # 0 退出系统
