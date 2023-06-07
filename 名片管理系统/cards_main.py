@@ -1,3 +1,4 @@
+#! /Users/zgj/miniconda3/bin/python
 import cards_tools
 
 while True: # 无限循环，用用户主动决定什么时候退出
