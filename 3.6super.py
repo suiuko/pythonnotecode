@@ -21,17 +21,23 @@ class XTQ(Dog):
     def fly(self):
         print("我会飞")
 
-
-# # 创建一个对象 --- 狗对象
-
-# wangcai = Animal()
-# wangcai.eat()
-# wangcai.drnk()
-# wangcai.run()
-# wangcai.sleep()
+    def bark(self):
+        # 1. 针对子类特有的需求
+        print("神一样")
+        
+        # 2. 使用 super 调用父类封装的方法
+        super().bark()
+        # 3. 添加其他 代码
+        print("*&^")
+        
+        
 
 # 创建一个啸天犬的对象
 xtq = XTQ()
-xtq.fly()
+# xtq.fly()
+
+# 如果子类中，重写了父类的方法
+# 在使用子类对象调用方法，会调用子类中重写的方法
+
 xtq.bark()
-xtq.eat()
+# xtq.eat()
